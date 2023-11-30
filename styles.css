@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: aquamarine;
+}
+
+.clockframe {
+  height: 40vh;
+  width: 40vh;
+  border: 0.5rem solid black;
+  border-radius: 50%;
+  position: relative;
+}
+.hand {
+  height: 1.5%;
+  /* width: 50%; */
+  background-color: blue;
+  position: absolute;
+  top: 20vh;
+  transform: rotate(90deg);
+  transform-origin: right center;
+}
+
+.hour {
+  width: 30%;
+  left: 8vh;
+}
+
+.min {
+  width: 40%;
+  left: 4vh;
+}
+.sec {
+  width: 48%;
+  left: 0.8vh;
+}
