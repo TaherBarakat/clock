@@ -26,6 +26,9 @@ main {
   top: 20vh;
   /* transform: rotate(90deg); */
   transform-origin: right center;
+
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
 }
 
 .hour {
@@ -40,4 +43,14 @@ main {
 .sec {
   width: 48%;
   left: 0.8vh;
+}
+.hand-holder {
+  position: absolute;
+  /* top: 50vh; */
+  /* left: 50vw; */
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  background-color: black;
+  z-index: 2;
 }
